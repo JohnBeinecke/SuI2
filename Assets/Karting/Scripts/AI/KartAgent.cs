@@ -4,6 +4,7 @@ using Unity.MLAgents.Sensors;
 using Unity.MLAgents.Actuators;
 using UnityEngine;
 using Random = UnityEngine.Random;
+// ReSharper disable All
 
 namespace KartGame.AI
 {
@@ -157,6 +158,7 @@ namespace KartGame.AI
             // Ensure that the agent touched the checkpoint and the new index is greater than the m_CheckpointIndex.
             if (triggered > 0 && index > m_CheckpointIndex || index == 0 && m_CheckpointIndex == Colliders.Length - 1)
             {
+                //Debug.Log(Quaternion.Angle(other.transform.rotation,this.gameObject.transform.rotation));
                 AddReward(PassCheckpointReward);
                 m_CheckpointIndex = index;
             }

@@ -118,6 +118,7 @@ MonoBehaviour:
   trackLayer:
     serializedVersion: 2
     m_Bits: 2048
+  player: {fileID: 0}
 --- !u!54 &5662468771577986656
 Rigidbody:
   m_ObjectHideFlags: 0
